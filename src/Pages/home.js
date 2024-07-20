@@ -15,6 +15,7 @@ const Home = () => {
   const [emotionalWords, setEmotionalWords] = useState([]);
   const [pronouns, setPronouns] = useState([]); // State for pronouns
   const [isReading, setIsReading] = useState(false);
+  const [pdfText, setPdfText] = useState(''); // State for the entire PDF text
   const speechSynthesisRef = useRef(null);
 
   // Function to handle file upload
@@ -41,6 +42,7 @@ const Home = () => {
         const pageText = content.items.map(item => item.str).join(' ');
         text += `${pageText} `;
       }
+      setPdfText(text); // Save the extracted text
       processText(text);
     };
     reader.readAsArrayBuffer(pdfFile);
@@ -69,7 +71,7 @@ const Home = () => {
     }
 
     const utterances = [];
-    const doc = compromise(emotionalWords.join(' '));
+    const doc = compromise(pdfText); // Process the entire PDF text
 
     doc.sentences().forEach(sent => {
       const utterance = new SpeechSynthesisUtterance(sent.text());
@@ -131,7 +133,7 @@ const Home = () => {
         <div className="title-box">
           <h1 className="title">Emotion PDF Reader</h1>
         </div>
-        <p className="subtitle">Upload a PDF and Explore it's content with Emotion detection.</p>
+        <p className="subtitle">Upload a PDF and Explore its content with Emotion detection.</p>
       </header>
       <section className="upload-section">
         <div className="file-upload">
