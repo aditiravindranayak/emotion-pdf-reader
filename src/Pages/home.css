@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  background: #f0f0ff; /* Light purple background */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-box {
+  display: inline-block;
+  padding: 15px;
+  background-color: #7412bb; /* Deep purple color */
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.file-upload {
+  margin-bottom: 10px;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #6A0DAD; /* Deep purple color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #4B0082;
+}
+
+.upload-instructions {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.info-section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #4B0082;
+}
+
+.info-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-list {
+  flex: 1 1 45%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #6A0DAD;
+}
+
+.info-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-item {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #4B0082;
+}
+
+.emotional-words-section {
+  margin-top: 30px;
+}
+
+.start-reading-btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 30px auto 0;
+  padding: 12px;
+  background-color: #8A2BE2; /* Blue violet color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-reading-btn:hover {
+  background-color: #6A0DAD;
+}
+
+.reading-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reading-controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #8A2BE2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.reading-controls button:hover {
+  background-color: #6A0DAD;
+}
+
+.reading-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 0;
+  background-color: #4B0082;
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .info-list {
+    flex: 1 1 100%;
+    margin-right: 0;
+  }
+
+  .reading-controls {
+    flex-direction: column;
+  }
+
+  .reading-controls button {
+    margin: 10px 0;
+  }
+}
+.upload-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.file-upload {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #6A0DAD; /* Deep purple border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.upload-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.file-upload {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #6A0DAD; /* Deep purple border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #6A0DAD; /* Deep purple color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+.upload-button:hover {
+  background-color: #4B0082;
+}
+
+.upload-instructions {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
