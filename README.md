@@ -11,3 +11,17 @@ An Emotion-Based PDF Reader project aimed to enhance the digital reading experie
 ## Technologies Used
 
 - AIML, Python
+
+## Getting Started
+
+To get started with Emotion Reader, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/webwizards.git`
+2. Navigate to the project directory: `cd webwizards`
+3. Install dependencies:
+   - For the backend, navigate to the `backend` directory and run `npm install`.
+   - For the frontend, navigate to the `frontend` directory and run `npm install`.
+4. Set up your MongoDB database and configure the connection string in the backend.
+5. Start the backend server: `npm start` in the `backend` directory.
+6. Start the frontend development server: `npm start` in the `frontend` directory.
+7. Access the application in your mobile at `http://localhost:8001`.
