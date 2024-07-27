@@ -1,4 +1,4 @@
-# Web Wizards
+# Emotion PDF Reader
 
 An Emotion-Based PDF Reader project aimed to enhance the digital reading experience by integrating advanced AI capabilities into a user-friendly interface. 
 
