@@ -16,8 +16,8 @@ An Emotion-Based PDF Reader project aimed to enhance the digital reading experie
 
 To get started with Emotion Reader, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/webwizards.git`
-2. Navigate to the project directory: `cd webwizards`
+1. Clone the repository: `git clone https://github.com/your-username/emotion-pdf-reader.git`
+2. Navigate to the project directory: `cd emotion-pdf-reader`
 3. Install dependencies:
    - For the backend, navigate to the `backend` directory and run `npm install`.
    - For the frontend, navigate to the `frontend` directory and run `npm install`.
